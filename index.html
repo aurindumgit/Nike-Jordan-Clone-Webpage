@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE JORDANS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" ><img src="nike.png"  class="logo"></a> 
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">New Arivals</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Sneakers<br>It's <span>Jordans</span></h2>
+                <p>Jordan shoes are a popular brand of athletic shoes designed, owned, and produced by Michael Jordan for Nike's Jordan Brand subsidiary. They are known for their high quality, comfort, and stylish design. Jordan shoes feature a variety of features that make them ideal for basketball and other sports. Website design by Aurindum Bose.</p>
+                <a href="https://github.com/aurindumgit?tab=repositories" target="_blank">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="jordans" width="800px">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img1 - Copy.png" onclick="imgSlider('img1.png'); changeCircleColor('#dc2424')"></li>
+            <li><img src="img2 - Copy.png" onclick="imgSlider('img2.png'); changeCircleColor('#c1f5db')"></li>
+            <li><img src="img3 - Copy.png" onclick="imgSlider('img3.png'); changeCircleColor('#f78b3e')"></li>
+            <li><img src="img4 - Copy.png" onclick="imgSlider('img4.png'); changeCircleColor('#bf2d1d')"></li>
+            <li><img src="img5 - Copy.png" onclick="imgSlider('img5.png'); changeCircleColor('#434be6')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.instagram.com/aurindumbose/" target="_blank"><img src="pngwing.com (10).png" ></a></li>
+            <li><a href="https://github.com/aurindumgit?tab=repositories" target="_blank"><img src="pngwing.com (8).png" ></a></li>
+            <li><a href="https://www.linkedin.com/in/aurindum-bose-440066247/" target="_blank"><img src="pngwing.com (9).png" ></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.jordans').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
